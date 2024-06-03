@@ -1,0 +1,94 @@
+@charset "ISO-8859-1";
+
+/* body {
+	background-color: red;
+}
+ */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: "Arial", sans-serif;
+}
+
+.main-product-container {
+	display: flex;
+}
+
+.main-product-container .filter-product {
+	width: 25%;
+	background-color: lime;
+	height: 100vh;
+}
+
+.main-product-container .product-container-row {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.main-product-container .product-container-row .product-container {
+	border: 2px solid #c1c1c1;
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	row-gap: 10px;
+	text-decoration: none;
+	transition: 0.4s ease;
+	background-color: #f7f7f7;
+	height: 300px;
+}
+
+.main-product-container .product-container-row .product-container:hover
+	{
+	transform: scale(1.05);
+}
+
+.main-product-container .product-container-row .product-container .product-image-container
+	{
+	width: inherit;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+
+.main-product-container .product-container-row .product-container .product-image-container img
+	{
+	width: 100%;
+}
+
+.main-product-container .product-container-row .product-container .product-details-container
+	{
+	width: inherit;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 5px;
+	height: 85px;
+}
+
+.main-product-container .product-container-row .product-container .product-details-container .phone-category-distributer
+	{
+	display: flex;
+	font-size: 14px;
+	justify-content: space-between;
+	color: #4f4f4f;
+}
+
+.main-product-container .product-container-row .product-container .product-details-container .phone-name
+	{
+	font-size: 18px;
+	color: #202324;
+	font-weight: bold;
+}
+
+.main-product-container .product-container-row .product-container .product-details-container .phone-price
+	{
+	color: orange;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 18px;
+} /*# sourceMappingURL=product.css.map */

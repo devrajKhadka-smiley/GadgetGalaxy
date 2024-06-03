@@ -1,0 +1,267 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Arial", "Poppins", sans-serif;
+}
+
+.p-0-80 {
+	padding: 0 80px;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar .topNavbar {
+	display: flex;
+	background-color: #f0f0f0;
+	height: 40px;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .topNavbar .topNavbarLeft {
+	width: 33.33%;
+	display: flex;
+	flex-direction: row;
+	-moz-column-gap: 20px;
+	column-gap: 20px;
+}
+
+.navbar .topNavbar .topNavbarLeft i {
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.navbar .topNavbar .topNavbarLeft i:hover {
+	color: blue;
+}
+
+.navbar .topNavbar .topNavbarCenter {
+	width: 33.33%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: red;
+}
+
+.navbar .topNavbar .topNavbarRight {
+	width: 33.33%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navbar .topNavbar .topNavbarRight a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar .topNavbar .topNavbarRight a:hover {
+	color: yellow;
+}
+
+.navbar .midNavbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: #cbd2e0;
+	height: 60px;
+	align-items: center;
+}
+
+.navbar .midNavbar .midNavbarLeft {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 33.33%;
+}
+
+.navbar .midNavbar .midNavbarLeft img.navbarLogo {
+	width: 26px;
+	height: 49px;
+	/* Since this is taller than the text, flex alignment is necessary */
+}
+
+.navbar .midNavbar .midNavbarCenter {
+	display: flex;
+	justify-content: center; /* Centers content within the middle div */
+	width: 33.33%;
+}
+
+.navbar .midNavbar .midNavbarCenter .product-search-bar {
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.navbar .midNavbar .midNavbarCenter .product-search-bar input[type=search]
+	{
+	background: transparent;
+	padding: 4px 10px;
+	margin: 0;
+	width: 300px;
+	font-size: 1.3rem;
+	border: none;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	color: rgb(53, 53, 53);
+}
+
+.navbar .midNavbar .midNavbarCenter .product-search-bar input[type=search]:focus
+	{
+	outline: none;
+}
+
+.navbar .midNavbar .midNavbarCenter .product-search-bar button[type=submit]
+	{
+	text-indent: -999px;
+	overflow: hidden;
+	width: 40px;
+	padding: 2px;
+	margin: 0;
+	padding-right: 2px;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	background: transparent url("../images/magnifying-glass-solid.svg")
+		no-repeat center;
+	cursor: pointer;
+	opacity: 0.7;
+	height: 50%;
+}
+
+.navbar .midNavbar .midNavbarCenter .product-search-bar button[type=submit]:hover
+	{
+	opacity: 1;
+}
+
+.navbar .midNavbar .midNavbarRight {
+	width: 33.33%;
+	color: black;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container {
+	display: flex;
+	width: 220px;
+	justify-content: space-between;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .system-in
+	{
+	display: flex;
+	align-items: center;
+	width: 105px;
+	justify-content: space-between;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .cart-area
+	{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 85px;
+	justify-content: space-around;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .cart-area .cart-count
+	{
+	color: #fff;
+	background-color: red;
+	padding: 2px 5px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .system-in a
+	{
+	text-decoration: none;
+	color: black; /* Set color for links */
+	font-size: 16px;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .system-in a:hover
+	{
+	text-decoration: underline;
+	color: yellow; /* Change color on hover */
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .fa-shopping-cart
+	{
+	cursor: pointer; /* Indicates that the icon is clickable */
+	font-size: 25px;
+	transition: 0.24s ease;
+}
+
+.navbar .midNavbar .midNavbarRight .midNavbarRight-container .fa-shopping-cart:hover
+	{
+	color: yellow;
+}
+
+.navbar .downNavbar {
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+	opacity: 0.5;
+	height: 60px;
+	justify-content: center;
+	box-shadow: 0 1px 4px black;
+}
+
+.navbar .downNavbar .downNavbarCenter {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar .downNavbar .downNavbarCenter a {
+	position: relative;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin: 0 5px;
+}
+
+.navbar .downNavbar .downNavbarCenter a:hover {
+	color: blue;
+}
+
+.navbar .downNavbar .downNavbarCenter a:hover::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, rgba(255, 204, 0, 0), blue,
+		rgba(255, 204, 0, 0));
+	position: relative;
+	bottom: -2px;
+	left: 0;
+}
+
+.navbar .downNavbar .downNavbarCenter a.active {
+	color: blue;
+}
+
+.navbar .downNavbar .downNavbarCenter a.active::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, rgba(255, 204, 0, 0), blue,
+		rgba(255, 204, 0, 0));
+	position: relative;
+	bottom: -2px;
+	left: 0;
+} /*# sourceMappingURL=main.css.map */
+.navbar .downNavbar.sticky {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+}

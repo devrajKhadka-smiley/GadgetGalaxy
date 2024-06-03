@@ -1,0 +1,101 @@
+@charset "ISO-8859-1";
+
+.admin-product {
+	margin-top: 50px;
+}
+
+.admin-product .view-product-section {
+	font-size: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.admin-product .view-product-section .add-product-button button {
+	padding: 10px 20px;
+	outline: none;
+	border: 1px solid black;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: 0.23s ease;
+	font-weight: bold;
+}
+
+.admin-product .view-product-section .add-product-button button:hover {
+	background-color: green;
+	color: #ffffff;
+	border: 1px solid green;
+}
+
+.admin-product .view-product-section .product-search-bar {
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	border: 1px solid rgb(53, 53, 53);
+}
+
+.admin-product .view-product-section .product-search-bar input[type=search]
+	{
+	background: transparent;
+	padding: 10px 20px;
+	margin: 0;
+	width: 350px;
+	font-size: 1.3rem;
+	border: none;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	color: rgb(53, 53, 53);
+}
+
+.admin-product .view-product-section .product-search-bar input[type=search]:focus
+	{
+	outline: none;
+}
+
+.admin-product .view-product-section .product-search-bar button[type=submit]
+	{
+	text-indent: -999px;
+	overflow: hidden;
+	width: 40px;
+	padding: 2px;
+	margin: 0;
+	padding-right: 2px;
+	border: 1px solid transparent;
+	border-radius: inherit;
+	background: transparent url("../images/magnifying-glass-solid.svg")
+		no-repeat center;
+	cursor: pointer;
+	opacity: 0.7;
+	height: 100%;
+}
+
+.admin-product .view-product-section .product-search-bar button[type=submit]:hover
+	{
+	opacity: 1;
+}
+
+.admin-product hr {
+	margin: 40px 0;
+	background-color: rgb(53, 53, 53);
+	height: 3px;
+}
+
+.admin-product table.product-display {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.admin-product table.product-display th {
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+.admin-product table.product-display th, .admin-product table.product-display td
+	{
+	border: 2px solid rgb(189, 189, 189);
+	padding: 10px;
+	text-align: center;
+} /*# sourceMappingURL=superadmin-product.css.map */
